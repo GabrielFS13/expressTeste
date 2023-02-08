@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 6035
 
 
 app.get('/', (req, res) =>{
@@ -8,7 +8,10 @@ app.get('/', (req, res) =>{
 })
 
 
+app.get("/Nome", (req, res) =>{
+    res.send("Um nome ae")
+})
 
 app.listen(port, () =>{
-    console.log("Server listen on 3000")
+    console.log("Server listen on 6035")
 })
