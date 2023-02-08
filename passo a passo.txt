@@ -1,0 +1,19 @@
+crie o "start": "node index.js" package.son
+o nome do arquivo tem que ser index.js
+
+crie o vercel.json
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "./index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ]
+  }
